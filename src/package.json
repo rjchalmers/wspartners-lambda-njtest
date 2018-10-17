@@ -1,0 +1,19 @@
+{
+  "name": "helloworld",
+  "description": "A helloworld nodejs lambda",
+  "version": "0.0.1",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "NODE_ENV=test node_modules/mocha/bin/mocha 'test/*.js'"
+  },
+  "dependencies": {
+    "aws-sdk": "*"
+  },
+  "devDependencies": {
+    "aws-sdk": "*",
+    "mocha": "^1.21.5",
+    "supertest": "^2.0.1"
+  }
+}
