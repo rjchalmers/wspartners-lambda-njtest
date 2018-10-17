@@ -1,7 +1,7 @@
 .PHONY: clean build test release
 
 # PLEASE CHANGE THE FOLLOWING FOR YOUR COMPONENT
-COMPONENT="cosmos-component-name-goes-here"
+COMPONENT="wspartners-sandbox-lambda-test"
 
 test:
 	# Install all dependencies for test, including devDependencies
@@ -24,4 +24,4 @@ build:
 		--copyout package.zip package.zip
 
 release: clean build
-	cosmos-release lambda --lambda-version=${BUILD_NUMBER} "./package.zip" $(COMPONENT)
+	cosmos-release lambda --lambda-version=${BUILD_NUMBER} "./package.zip" $(wspartners-sandbox-lambda-test)
